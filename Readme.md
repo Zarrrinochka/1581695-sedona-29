@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Зарина Гаязова](https://up.htmlacademy.ru/htmlcss/29/user/1581695).
-* Наставник: `Неизвестно`.
+* Наставник: `[Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker)`.
 
 ---
 
