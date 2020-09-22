@@ -1,0 +1,224 @@
+:root {
+  --background: #F2F2F2;
+  --basic-background: #888888;
+  --black: #000000;
+  --white: #ffffff;
+  --medium-light-shade-of-blue-and-cyan: #81B3D2;
+  --very-light-shade-gray: #EEEEEE;
+  --grayish-orange: #766357;
+  --basic-white-90: #ffffff90;
+  --less-black: #333333;
+
+}
+
+.page-body {
+  font-family: "PT Sans", "Arial", sans-serif;;
+  text-align: center;
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--black)
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--black)
+}
+
+.top-menu {
+  background-color: var(--white)
+}
+
+.logo {
+  /* наверняка потом понадобится */
+}
+
+.panel-navigation {
+  ont-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--black)
+}
+
+.one {
+  /* наверняка потом понадобится */
+}
+
+.two {
+  /* наверняка потом понадобится */
+}
+
+.three {
+  /* наверняка потом понадобится */
+}
+
+.four {
+  /* наверняка потом понадобится */
+}
+
+.welcome-picture {
+  /* наверняка потом понадобится */
+}
+
+.sedona-is {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--black);
+}
+.sedona-better{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--less-black);
+}
+
+
+
+.reason-1-2 {
+  background-color: : var(--medium-light-shade-of-blue-and-cyan);
+}
+
+.real-town {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--white);
+}
+
+.number1-2 {
+  font-weight: normal;
+  font-size: 14px;
+  color: var(--white);
+}
+
+.own-life {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--white);
+}
+
+.advice-list{
+  background-color: var(--white)
+}
+
+.advice-item h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--black);
+}
+
+.advice-item p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--less-black)
+}
+
+.devil-bridge {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--white)
+}
+
+.devil-bridge p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: inherit;
+}
+
+
+/* часть списка упоковать в div?
+background-color: var(--very-light-shade-gray);
+*/
+
+
+/* не уверенна, что это вообще нужно
+.square-road-tourists {} */
+
+.little-square {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--black);
+}
+
+.number3-4-5 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(less-black);
+}
+
+.square-road-tourists p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(less-black);
+}
+
+.offer {
+  line-height: 24px; /* не уверенна, что это нужно*/
+}
+
+.offer b {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.offer p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--less-black)
+}
+
+
+.find-hotel {} /* не уверенна, что это нужно*/
+
+  .button-find-hotel {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--white);
+    background-color: var(--grayish-orange)
+  }
+
+  .find {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--white);
+    background: var(--medium-light-shade-of-blue-and-cyan);
+  }
+
+  .main-footer {
+    background-color: var(--white)
+  }
+
+  .phone h3 {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--black);
+  }
+
+  .phone p {
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: var(--black);
+  }
+
+  .footer-social {}
+
+    .footer-copyright {}
+
+      .button {}
