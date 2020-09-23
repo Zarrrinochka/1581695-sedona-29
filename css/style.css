@@ -2,31 +2,31 @@
   --background: #F2F2F2;
   --basic-background: #888888;
   --black: #000000;
+  --less-black: #333333;
   --white: #ffffff;
-  --medium-light-shade-of-blue-and-cyan: #81B3D2;
-  --very-light-shade-gray: #EEEEEE;
+  --light-cyan: #81B3D2;
+  --very-light-gray: #EEEEEE;
   --grayish-orange: #766357;
   --basic-white-90: #ffffff90;
-  --less-black: #333333;
-
 }
 
 .page-body {
-  font-family: "PT Sans", "Arial", sans-serif;;
-  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   text-transform: uppercase;
-  color: var(--black)
+  color: var(--less-black);
 }
 
 
 a {
   text-decoration: none;
-  color: var(--black)
+  color: var(--black);
 }
 
-.top-menu {
-  background-color: var(--white)
+.main-nav {
+  background-color: var(--white);
 }
 
 .logo {
@@ -34,26 +34,23 @@ a {
 }
 
 .panel-navigation {
-  ont-weight: bold;
+  font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  color: var(--black)
+  color: var(--black);
 }
 
-.one {
-  /* наверняка потом понадобится */
+.main-nav-list{
+  /* наверное потом понадобится */
 }
 
-.two {
-  /* наверняка потом понадобится */
-}
-
-.three {
-  /* наверняка потом понадобится */
-}
-
-.four {
-  /* наверняка потом понадобится */
+.main-nav-item{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--black);
+  text-align: center;
 }
 
 .welcome-picture {
@@ -65,29 +62,29 @@ a {
   font-size: 21px;
   line-height: 26px;
   color: var(--black);
+  text-align: center;
 }
-.sedona-better{
+.sedona-better {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   color: var(--less-black);
+  text-align: center;
 }
 
-
-
-.reason-1-2 {
-  background-color: : var(--medium-light-shade-of-blue-and-cyan);
+.reason-on-blue {
+  background-color: : var(--light-cyan);
 }
 
 .real-town {
-  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   color: var(--white);
+  text-align: center;
 }
 
-.number1-2 {
+.white-number {
   font-weight: normal;
   font-size: 14px;
   color: var(--white);
@@ -98,6 +95,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   color: var(--white);
+  text-align: center;
 }
 
 .advice-list{
@@ -109,6 +107,7 @@ a {
   font-size: 21px;
   line-height: 21px;
   color: var(--black);
+  text-align: center;
 }
 
 .advice-item p {
@@ -116,6 +115,7 @@ a {
   font-size: 14px;
   line-height: 21px;
   color: var(--less-black)
+  text-align: center;
 }
 
 .devil-bridge {
@@ -123,13 +123,15 @@ a {
   font-size: 21px;
   line-height: 21px;
   color: var(--white)
+  text-align: center;
 }
 
-.devil-bridge p {
+.can-walk {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   color: inherit;
+  text-align: center;
 }
 
 
@@ -146,13 +148,15 @@ background-color: var(--very-light-shade-gray);
   font-size: 21px;
   line-height: 21px;
   color: var(--black);
+  text-align: center;
 }
 
-.number3-4-5 {
+.reason-on-gray {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   color: var(less-black);
+  text-align: center;
 }
 
 .square-road-tourists p {
@@ -160,10 +164,12 @@ background-color: var(--very-light-shade-gray);
   font-size: 14px;
   line-height: 21px;
   color: var(less-black);
+  text-align: center;
 }
 
 .offer {
   line-height: 24px; /* не уверенна, что это нужно*/
+  text-align: center;
 }
 
 .offer b {
@@ -171,54 +177,60 @@ background-color: var(--very-light-shade-gray);
   font-size: 30px;
   line-height: 24px;
   color: var(--black);
+  text-align: center;
 }
 
 .offer p {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: var(--less-black)
+  color: var(--less-black);
+  text-align: center;
 }
 
 
 .find-hotel {} /* не уверенна, что это нужно*/
 
-  .button-find-hotel {
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    color: var(--white);
-    background-color: var(--grayish-orange)
-  }
+.button-find-hotel {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+  background-color: var(--grayish-orange)
+  text-align: center;
+}
 
-  .find {
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    color: var(--white);
-    background: var(--medium-light-shade-of-blue-and-cyan);
-  }
+.find {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+  background: var(--light-cyan:);
+  text-align: center;
+}
 
-  .main-footer {
-    background-color: var(--white)
-  }
+.main-footer {
+  background-color: var(--white)
+}
 
-  .phone h3 {
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    color: var(--black);
-  }
+.phone h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--black);
+  text-align: center;
+}
 
-  .phone p {
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    color: var(--black);
-  }
+.phone p {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--black);
+  text-align: center;
+}
 
-  .footer-social {}
+.footer-social {}
 
-    .footer-copyright {}
+.footer-copyright {}
 
-      .button {}
+.button {}
