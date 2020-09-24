@@ -57,14 +57,14 @@ a {
   /* наверняка потом понадобится */
 }
 
-.sedona-is {
+.sedona-is h1 {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--black);
   text-align: center;
 }
-.sedona-better {
+.sedona-better h2 {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
@@ -99,7 +99,7 @@ a {
 }
 
 .advice-list{
-  background-color: var(--white)
+  background-color: var(--white);
 }
 
 .advice-item h3 {
@@ -114,7 +114,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: var(--less-black)
+  color: var(--less-black);
   text-align: center;
 }
 
@@ -122,7 +122,7 @@ a {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  color: var(--white)
+  color: var(--white);
   text-align: center;
 }
 
@@ -196,7 +196,7 @@ background-color: var(--very-light-shade-gray);
   font-size: 21px;
   line-height: 26px;
   color: var(--white);
-  background-color: var(--grayish-orange)
+  background-color: var(--grayish-orange);
   text-align: center;
 }
 
