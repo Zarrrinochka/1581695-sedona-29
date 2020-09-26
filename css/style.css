@@ -1,9 +1,9 @@
 :root {
   --background: #F2F2F2;
+  --white: #ffffff;
   --basic-background: #888888;
   --black: #000000;
   --less-black: #333333;
-  --white: #ffffff;
   --light-cyan: #81B3D2;
   --very-light-gray: #EEEEEE;
   --grayish-orange: #766357;
@@ -14,194 +14,161 @@ li {
   list-style: none; /* Убираем маркеры */
 }
 
-a {
-    color: var(--black);
-    text-decoration: none; /* Отменяем подчеркивание у ссылки */
-}
-
 .page-body {
-  font-size: 14px;
-  line-height: 26px;
+  background-color: var(--background);
   font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  text-transform: uppercase;
-  color: var(--less-black);
 }
 
 .main-nav {
   background-color: var(--white);
 }
 
-.logo {  /* наверняка потом понадобится */}
-
-.main-nav-list a {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--black);
-}
-
-.main-nav-item{
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--black);
+.main-nav-item {
   text-align: center;
 }
 
-.welcome-picture {
-  /* наверняка потом понадобится */
+.main-nav-item a {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--black);
+  text-decoration: none;
 }
 
-.sedona-is h1 {
+.white-background {
+  background-color: var(--white);
+}
+
+.sedona-is {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--black);
   text-align: center;
+  text-transform: uppercase;
 }
-.sedona-better h2 {
+
+.sedona-better {
+  font-family: PT Sans;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  color: var(--less-black);
+  align-items: center;
   text-align: center;
+  text-transform: uppercase;
+  color: var(--less-black);
 }
 
 .reason-on-blue {
+  background-color: var(--light-cyan);
   text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
 }
 
 .real-town {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  color: var(--white);
-  text-align: center;
-  background-color: var(--light-cyan);
 }
 
-.white-number {
-  font-weight: normal;
-  font-size: 14px;
+.numbers-white{
   color: var(--white);
-  text-align: center;
-  background-color:var(--light-cyan);
-}
-
-.own-life {
+  font-family: PT Sans;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: var(--white);
-  text-align: center;
-  background-color:var(--light-cyan);
+  align-items: center;
+  text-transform: uppercase;
 }
 
-.advice-list {
+.own-brave {
+  color: var(--white);
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.advices-list {
   background-color: var(--white);
-}
-
-.advice-item h3 {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--black);
   text-align: center;
 }
 
-.advice-item p {
+.advice-item{
+  color: var(--black);
+}
+
+.house-food-souvenirs {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.recommend {
+  font-family: PT Sans;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
   color: var(--less-black);
-  text-align: center;
 }
 
-.devil-bridge {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--white);
-  text-align: center;
-  background-color:var(--light-cyan);
-}
-
-.can-walk {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--white);
-  text-align: center;
-  background-color:var(--light-cyan);
-}
-
-
-/* часть списка упоковать в div?
-background-color: var(--very-light-shade-gray);
-*/
-
-
-/* не уверенна, что это вообще нужно
-.square-road-tourists {} */
-
-
-.reason-about-square {
-  text-align: center;
-}
-
-.road-tourists {
-  text-align: center;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  color: var(--black);
-  text-align: center;
-}
-
-.road-tourists span {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(less-black);
-  text-align: center;
-}
-
-.road-tourists p {
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(less-black);
+.square-road-tourists {
+  background-color: var(--very-light-gray);
   text-align: center;
 }
 
 .little-square {
+  font-family: PT Sans;
+  font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
   color: var(--black);
-  text-align: center;
 }
 
-.reason-on-gray span {
+.numbers {
+  color: var(--less-black);
+  font-family: PT Sans;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: var(less-black);
-  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
 }
 
-.square-road-tourists p {
+.close-fun-free{
+  color: var(--less-black);
+  font-family: PT Sans;
+  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: var(less-black);
-  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
 }
 
 .offer {
-  line-height: 24px; /* не уверенна, что это нужно*/
+  background-color: var(--white);
   text-align: center;
 }
 
@@ -211,6 +178,7 @@ background-color: var(--very-light-shade-gray);
   line-height: 24px;
   color: var(--black);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .offer p {
@@ -219,6 +187,7 @@ background-color: var(--very-light-shade-gray);
   line-height: 24px;
   color: var(--less-black);
   text-align: center;
+  text-transform: uppercase;
 }
 
 
@@ -248,6 +217,106 @@ background-color: var(--very-light-shade-gray);
   text-transform: uppercase;
 }
 
+.body-hotels {
+  background-color: var(--white);
+}
+
+.found{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.sorting {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.sorting-options a {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--light-cyan);
+  text-decoration: none;
+}
+
+.img-hotels {
+  text-decoration: none;
+}
+
+.hotels-names {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.price{
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--less-black);
+}
+
+.detailed {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--light-cyan);
+}
+
+.reservation {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--grayish-orange);
+}
+
+.rating {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+
 .main-footer {
   background-color: var(--white)
 }
@@ -270,8 +339,5 @@ background-color: var(--very-light-shade-gray);
 
 .footer-social {
   text-align: center;
+  color: var(--black);
 }
-
-.footer-copyright {}
-
-.button {}
