@@ -10,6 +10,15 @@
   --basic-white-90: #ffffff90;
 }
 
+li {
+  list-style: none; /* Убираем маркеры */
+}
+
+a {
+    color: var(--black);
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
 .page-body {
   font-size: 14px;
   line-height: 26px;
@@ -19,29 +28,17 @@
   color: var(--less-black);
 }
 
-
-a {
-  text-decoration: none;
-  color: var(--black);
-}
-
 .main-nav {
   background-color: var(--white);
 }
 
-.logo {
-  /* наверняка потом понадобится */
-}
+.logo {  /* наверняка потом понадобится */}
 
-.panel-navigation {
+.main-nav-list a {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   color: var(--black);
-}
-
-.main-nav-list{
-  /* наверное потом понадобится */
 }
 
 .main-nav-item{
@@ -73,7 +70,7 @@ a {
 }
 
 .reason-on-blue {
-  background-color: : var(--light-cyan);
+  text-align: center;
 }
 
 .real-town {
@@ -82,12 +79,15 @@ a {
   line-height: 21px;
   color: var(--white);
   text-align: center;
+  background-color: var(--light-cyan);
 }
 
 .white-number {
   font-weight: normal;
   font-size: 14px;
   color: var(--white);
+  text-align: center;
+  background-color:var(--light-cyan);
 }
 
 .own-life {
@@ -96,9 +96,10 @@ a {
   line-height: 21px;
   color: var(--white);
   text-align: center;
+  background-color:var(--light-cyan);
 }
 
-.advice-list{
+.advice-list {
   background-color: var(--white);
 }
 
@@ -124,14 +125,16 @@ a {
   line-height: 21px;
   color: var(--white);
   text-align: center;
+  background-color:var(--light-cyan);
 }
 
 .can-walk {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: inherit;
+  color: var(--white);
   text-align: center;
+  background-color:var(--light-cyan);
 }
 
 
@@ -143,6 +146,36 @@ background-color: var(--very-light-shade-gray);
 /* не уверенна, что это вообще нужно
 .square-road-tourists {} */
 
+
+.reason-about-square {
+  text-align: center;
+}
+
+.road-tourists {
+  text-align: center;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--black);
+  text-align: center;
+}
+
+.road-tourists span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(less-black);
+  text-align: center;
+}
+
+.road-tourists p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(less-black);
+  text-align: center;
+}
+
 .little-square {
   font-weight: bold;
   font-size: 21px;
@@ -151,7 +184,7 @@ background-color: var(--very-light-shade-gray);
   text-align: center;
 }
 
-.reason-on-gray {
+.reason-on-gray span {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
@@ -189,24 +222,30 @@ background-color: var(--very-light-shade-gray);
 }
 
 
-.find-hotel {} /* не уверенна, что это нужно*/
+.find-hotel {
+  text-align: center;
+}
 
 .button-find-hotel {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--white);
   background-color: var(--grayish-orange);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .find {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--white);
-  background: var(--light-cyan:);
+  background-color:var(--light-cyan);
   text-align: center;
+  text-transform: uppercase;
 }
 
 .main-footer {
@@ -229,7 +268,9 @@ background-color: var(--very-light-shade-gray);
   text-align: center;
 }
 
-.footer-social {}
+.footer-social {
+  text-align: center;
+}
 
 .footer-copyright {}
 
