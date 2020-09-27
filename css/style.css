@@ -314,11 +314,12 @@ li {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  background-color: var(--background)
 }
 
 
 .main-footer {
-  background-color: var(--white)
+  background-color: var(--basic-white-90)
 }
 
 .phone h3 {
