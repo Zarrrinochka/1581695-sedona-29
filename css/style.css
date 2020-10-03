@@ -16,10 +16,15 @@ li {
 
 .page-body {
   background-color: var(--background);
-  color: white;
   font-family: "PT Sans", "Arial", sans-serif;
+  min-width: 1200px;
   width: 1280px;
   height: 2762px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .main-nav {
@@ -67,49 +72,10 @@ li {
 }
 
 .reason-on-blue {
+  background-color: var(--light-cyan);
   text-align: center;
   text-transform: uppercase;
   color: var(--white);
-}
-
-.not-attraction {
-  height: 256px;
-  width: 400px;
-  float: left;
-  background-color: var(--light-cyan);
-  align-items: center;
-}
-.img-porch{
-  float: left;
-}
-
-.img-bridge{
-  float: left;
-}
-
-.devil-bridge {
-  height: 256px;
-  width: 400px;
-  float: left;
-  background-color: var(--light-cyan);
-}
-
-.column1 {
-  clear: left;
-  float: left;
-  height: 256px;
-  width: 400px;
-}
-.column2 {
-  float: left;
-  height: 256px;
-  width: 400px;
-}
-
-.column3 {
-  float: right;
-  height: 256px;
-  width: 400px;
 }
 
 .real-town {
@@ -117,7 +83,6 @@ li {
   font-size: 21px;
   line-height: 21px;
 }
-
 
 .numbers-white{
   color: var(--white);
@@ -174,9 +139,6 @@ li {
 
 .square-road-tourists {
   background-color: var(--very-light-gray);
-}
-
-.square-road-tourists-elements {
   text-align: center;
 }
 
