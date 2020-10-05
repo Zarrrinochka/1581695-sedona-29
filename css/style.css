@@ -12,26 +12,30 @@
 
 li {
   list-style: none; /* Убираем маркеры */
-  margin-right: : 0px;
-}
-
-ul {
-  padding-inline-start: 0px; /*user agent stylesheet убираем*/
 }
 
 .page-body {
   background-color: var(--background);
   font-family: "PT Sans", "Arial", sans-serif;
   min-width: 1200px;
+  width: 1280px;
   height: 2762px;
-  width: 1200px;
 }
 
-  .main-nav {
-    background-color: var(--white);
-  }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-nav {
+  background-color: var(--white);
+}
 
 .main-nav-item {
+  text-align: center;
+}
+
+.main-nav-item a {
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
@@ -42,26 +46,17 @@ ul {
   text-decoration: none;
 }
 
-.img-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+.white-background {
+  background-color: var(--white);
 }
 
 .sedona-is {
-  background-color: var(--white);
-  width: 1200px;
-  height: 216px;
-}
-
-.sedona-is-text {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--black);
   text-align: center;
   text-transform: uppercase;
-  padding-top: 42px;
 }
 
 .sedona-better {
@@ -70,43 +65,33 @@ ul {
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: var(--less-black);
-  margin-top: 50px;
 }
 
-.reason-on-blue-1 {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 256px;
+.reason-on-blue {
   background-color: var(--light-cyan);
-}
-
-.grid-area-1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  padding-top: 47px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
 }
 
 .real-town {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white);
 }
 
 .numbers-white{
-  display: grid;
   color: var(--white);
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  text-align: center;
+  align-items: center;
   text-transform: uppercase;
 }
 
@@ -117,42 +102,18 @@ ul {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  text-align: center;
+  align-items: center;
   text-transform: uppercase;
 }
 
-
-.grid-area-2 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-}
-
 .advices-list {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 332px;
   background-color: var(--white);
   text-align: center;
 }
 
 .advice-item{
-  align-items: center;
-  padding-top: 129px;
   color: var(--black);
 }
-
-.grid-area-3 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-
-.grid-area-4 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  padding-top: 47px;
-}
-
-
 
 .house-food-souvenirs {
   font-family: PT Sans;
@@ -176,27 +137,11 @@ ul {
   color: var(--less-black);
 }
 
-.square-road-tourists1 {
-  Width: 400px;
-  Height: 256px;
+.square-road-tourists {
   background-color: var(--very-light-gray);
   text-align: center;
-  padding-top: 47px;
 }
-.square-road-tourists2 {
-  Width: 400px;
-  Height: 256px;
-  background-color: var(--very-light-gray);
-  text-align: center;
-  padding-top: 47px;
-}
-.square-road-tourists3 {
-  Width: 400px;
-  Height: 256px;
-  background-color: var(--very-light-gray);
-  text-align: center;
-  padding-top: 47px;
-}
+
 .little-square {
   font-family: PT Sans;
   font-style: normal;
@@ -233,7 +178,6 @@ ul {
 .offer {
   background-color: var(--white);
   text-align: center;
-  padding-top: 47px;
 }
 
 .offer b {
