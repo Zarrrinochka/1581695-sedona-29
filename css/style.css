@@ -10,44 +10,74 @@
   --basic-white-90: #ffffff90;
 }
 
-li {
-  list-style: none; /* Убираем маркеры */
-}
-
-.page-body {
+.container {
+  display: grid;
   background-color: var(--background);
   font-family: "PT Sans", "Arial", sans-serif;
   min-width: 1200px;
   width: 1280px;
   height: 2762px;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
+  margin-left: auto;
+  margin-right: auto;
+  }
 
 .main-nav {
-  background-color: var(--white);
+display: flex;
+width: 1200px;
+height: 56px;
+background-color: var(--white);
+margin-right: 40px;
+margin-left: 40px;
 }
 
-.main-nav-item {
-  text-align: center;
+.sedona-logo {
+/*вот тут непонятно как лого поместить посередине, не помешав списку)
+*/
 }
 
-.main-nav-item a {
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: var(--black);
-  text-decoration: none;
+.nav-items {
+list-style-type: none; /* Убираем маркеры для ul li*/
+display: flex;
+padding: 0px; /*убираем автоматику ul*/
+margin-left: 0px; /*убираем автоматику ul*/
+}
+
+.left-one {
+margin-left: 75px;
+}
+.left-one2 {
+margin-left: 134px;
+}
+.left-one3 {
+margin-left: 418px;
+}
+.left-one4 {
+margin-left: 147px;
+}
+
+.nav-item {
+text-decoration: none; /*убираем подчеркивание у "a"*/
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 26px;
+text-transform: uppercase;
+color: var(--black);
+}
+
+.img-center {
+/*почему здесь контейнер не сработал?*/
+margin-left: 411px;
+margin-top: 77px;
+margin-bottom: 80px;
 }
 
 .white-background {
   background-color: var(--white);
+  width: 1200px;
+  height: 216px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .sedona-is {
@@ -57,10 +87,10 @@ li {
   color: var(--black);
   text-align: center;
   text-transform: uppercase;
+  padding-top: 42px;
 }
 
 .sedona-better {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -69,24 +99,44 @@ li {
   text-align: center;
   text-transform: uppercase;
   color: var(--less-black);
+  margin-top: 50px;
 }
 
-.reason-on-blue {
-  background-color: var(--light-cyan);
+.delete-mark {
+list-style-type: none; /* Убираем маркеры для ul li*/
+width: 1200px;
+margin: 0px;
+}
+
+.reason-on-blue-1 {
+  display: grid;
+  width: 1200px;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 256px;
+  background-color: var(--white);
   text-align: center;
-  text-transform: uppercase;
-  color: var(--white);
+  padding-inline-start: 0px; /*user agent stylesheet убираем*/
+  background-color: var(--light-cyan);
+}
+
+.grid-area-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  padding-top: 47px;
 }
 
 .real-town {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
 }
 
-.numbers-white{
+.numbers-white {
+  display: grid;
   color: var(--white);
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -97,7 +147,6 @@ li {
 
 .own-brave {
   color: var(--white);
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -106,17 +155,29 @@ li {
   text-transform: uppercase;
 }
 
-.advices-list {
-  background-color: var(--white);
-  text-align: center;
+.grid-area-2 {
+  grid-column-start: -1;
+  grid-column-end: -3;
 }
 
-.advice-item{
+.advices-list {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 332px;
+  background-color: var(--white);
+  text-align: center;
+  padding-left: 0px;
+}
+
+.advice-item {
+  align-items: center;
+  padding-top: 129px;
   color: var(--black);
+  list-style: none;
+  margin-right: 0px;
 }
 
 .house-food-souvenirs {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -127,7 +188,6 @@ li {
 }
 
 .recommend {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -137,13 +197,49 @@ li {
   color: var(--less-black);
 }
 
-.square-road-tourists {
+.grid-area-3 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.grid-area-4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  padding-top: 47px;
+}
+
+.square-road-tourists1 {
+  display: inline-block;
+  width: 400px;
+  height: 209px;
   background-color: var(--very-light-gray);
   text-align: center;
+  padding-top: 47px;
+  list-style: none;
+  margin-right: 0px;
+}
+
+/* узел не даёт схлопнуться, что делать?*/
+
+.square-road-tourists2 {
+  display: inline-block;
+  width: 400px;
+  height: 209px;
+  background-color: var(--very-light-gray);
+  text-align: center;
+  padding-top: 47px;
+}
+
+.square-road-tourists3 {
+  display: inline-block;
+  width: 400px;
+  height: 209px;
+  background-color: var(--very-light-gray);
+  text-align: center;
+  padding-top: 47px;
 }
 
 .little-square {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -151,11 +247,11 @@ li {
   text-align: center;
   text-transform: uppercase;
   color: var(--black);
+  margin: 0px;
 }
 
 .numbers {
   color: var(--less-black);
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -166,7 +262,6 @@ li {
 
 .close-fun-free{
   color: var(--less-black);
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -204,7 +299,6 @@ li {
 }
 
 .button-find-hotel {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -215,7 +309,6 @@ li {
 }
 
 .find {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -230,7 +323,6 @@ li {
 }
 
 .found{
-  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -241,7 +333,6 @@ li {
 }
 
 .sorting {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -252,7 +343,6 @@ li {
 }
 
 .sorting-options a {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -270,7 +360,6 @@ li {
 .hotels-names {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
@@ -281,7 +370,6 @@ li {
 }
 
 .price{
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -292,7 +380,6 @@ li {
 }
 
 .detailed {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -304,7 +391,6 @@ li {
 }
 
 .reservation {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -316,7 +402,6 @@ li {
 }
 
 .rating {
-  font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
