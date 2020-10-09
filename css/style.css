@@ -10,74 +10,71 @@
   --basic-white-90: #ffffff90;
 }
 
+.page-body {
+  background-color: var(--background);
+  font-family: "PT Sans", "Arial", "sans-serif";
+  min-width: 1200px;
+}
+
 .container {
   display: grid;
-  background-color: var(--background);
-  font-family: "PT Sans", "Arial", sans-serif;
-  min-width: 1200px;
-  width: 1280px;
-  height: 2762px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  }
+}
 
 .main-nav {
-display: flex;
-width: 1200px;
-height: 56px;
-background-color: var(--white);
-margin-right: 40px;
-margin-left: 40px;
+  display: flex;
+  width: 1200px;
+  height: 56px;
+  background-color: var(--white);
 }
 
 .sedona-logo {
-/*вот тут непонятно как лого поместить посередине, не помешав списку)
-*/
+  position: absolute;
+  margin-left: 531px;
 }
 
-.nav-items {
-list-style-type: none; /* Убираем маркеры для ul li*/
-display: flex;
-padding: 0px; /*убираем автоматику ul*/
-margin-left: 0px; /*убираем автоматику ul*/
+.nav-list {
+  display: flex;
+  width: 1056px;
+  list-style-type: none; /* Убираем маркеры для ul li*/
+  margin-left: 0px; /*убираем автоматику ul*/
+  padding: 0px 72px;
+  justify-content: space-between;
 }
 
-.left-one {
-margin-left: 75px;
-}
-.left-one2 {
-margin-left: 134px;
-}
-.left-one3 {
-margin-left: 418px;
-}
-.left-one4 {
-margin-left: 147px;
+.nav-list li {
+  width: 229px;
 }
 
-.nav-item {
-text-decoration: none; /*убираем подчеркивание у "a"*/
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 26px;
-text-transform: uppercase;
-color: var(--black);
+.nav-list li:nth-child(3) {
+  text-align: right;
+}
+
+.nav-list li:nth-child(4) {
+  text-align: right;
+}
+
+.nav-text {
+  text-decoration: none; /*убираем подчеркивание у "a"*/
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--black);
 }
 
 .img-center {
-/*почему здесь контейнер не сработал?*/
-margin-left: 411px;
-margin-top: 77px;
-margin-bottom: 80px;
+  margin-left: 411px;
+  margin-top: 77px;
+  margin-bottom: 80px;
 }
 
 .white-background {
   background-color: var(--white);
-  width: 1200px;
   height: 216px;
-  margin-left: 40px;
-  margin-right: 40px;
 }
 
 .sedona-is {
@@ -103,14 +100,13 @@ margin-bottom: 80px;
 }
 
 .delete-mark {
-list-style-type: none; /* Убираем маркеры для ul li*/
-width: 1200px;
-margin: 0px;
+  list-style-type: none; /* Убираем маркеры для ul li*/
+  margin: 0px;
+  padding: 0px; /* Убираем автоотступ для ul li*/
 }
 
 .reason-on-blue-1 {
   display: grid;
-  width: 1200px;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 256px;
   background-color: var(--white);
@@ -209,7 +205,8 @@ margin: 0px;
 }
 
 .square-road-tourists1 {
-  display: inline-block;
+  display: block;
+  float: left;
   width: 400px;
   height: 209px;
   background-color: var(--very-light-gray);
@@ -219,10 +216,11 @@ margin: 0px;
   margin-right: 0px;
 }
 
-/* узел не даёт схлопнуться, что делать?*/
+/* инлайн не сработал и флекс тож*/
 
 .square-road-tourists2 {
-  display: inline-block;
+  display: block;
+  float: left;
   width: 400px;
   height: 209px;
   background-color: var(--very-light-gray);
@@ -231,7 +229,8 @@ margin: 0px;
 }
 
 .square-road-tourists3 {
-  display: inline-block;
+  display: block;
+  float: left;
   width: 400px;
   height: 209px;
   background-color: var(--very-light-gray);
@@ -258,6 +257,7 @@ margin: 0px;
   line-height: 21px;
   align-items: center;
   text-transform: uppercase;
+  padding-top: 17px;
 }
 
 .close-fun-free{
