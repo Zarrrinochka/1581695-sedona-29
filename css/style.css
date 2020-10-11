@@ -106,33 +106,28 @@ margin-right: 0;
   padding-bottom: 51px;
 }
 
-.delete-marc { /* Убираем маркеры, с дивом не работает*/
+.gridtab-of-reasons-and-advices { /* Убираем автоматику только для первого*/
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-.gridtab-of-reasons-and-advices li /*если не подписать li работать не будет*/ {
   display: grid;
-  margin: 0px;
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 256px 330px 256px 256px;
 }
 
-.reason-one {
+.reason-real-town {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
   background-color: var(--light-cyan);
-  margin: 0;
-  padding: 0;
   text-align: center;
   color: var(--white);
   text-transform: uppercase;
+  padding: 5px;
 }
 
-.reason-one h3 {
+.reason-real-town h3 {
   margin: 0;
   padding: 47px 0 25px 0;
   font-weight: bold;
@@ -147,8 +142,9 @@ margin-right: 0;
   line-height: 21px;
 }
 
-.reason-one p {
+.reason-real-town p {
   padding-top: 23px;
+  padding-bottom: 54px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -163,12 +159,24 @@ margin-right: 0;
   grid-row-end: 2;
 }
 
-.advices-list {
+/*.advices-list {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
   background-color: var(--white);
-  text-align: center;
-  padding-left: 0px;
+  list-style-type: none;
+  padding: 5px;
+  margin: 0;
+}*/
+
+.advices {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: var(--white);
+  list-style-type: none;
+  padding: 5px;
+  margin: 0;
 }
