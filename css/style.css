@@ -124,55 +124,280 @@ margin-right: 0;
 .reason-text {
   grid-column-start: 1;
   grid-column-end: 2;
-}
-
-.reason-real-town {
   background-color: var(--light-cyan);
   text-align: center;
   color: var(--white);
   text-transform: uppercase;
-  padding: 5px;
 }
 
-.reason-real-town h3 {
-  margin: 0;
-  padding: 47px 0 25px 0;
+.reason-text h3 {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
+  padding: 47px 0 25px 0;
+  margin: 0; /*доб паддинг, автоматически появ маргин*/
 }
 
-.numbers-white {
+.reason-text span { /*мар и пад не работают*/
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
 }
 
-.reason-real-town p {
-  padding-top: 23px;
-  padding-bottom: 54px;
+.reason-text p {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   margin: 0;
+  padding: 23px 0 0 0;
 }
 
+.img-for-reason-one {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.img-for-reason-one img {
+display: block;
+}
 
 .advices-list {
 display: grid;
 grid-template-columns: 400px 400px 400px;
+list-style-type: none;
+padding-left: 0;
+text-align: center;
 }
 
-/*
-.advices {
+.advices-list li {
+background-color: var(--white);
+}
+
+.advices-list h3{
+font-style: normal;
+font-weight: bold;
+font-size: 21px;
+line-height: 21px;
+text-transform: uppercase;
+margin: 0;
+padding: 160px 0 25px 0;
+}
+
+.advices-list p{
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 21px;
+text-transform: uppercase;
+color: var(--less-black);
+margin: 0;
+padding: 0 0 82px 0;
+}
+
+.reason-devil-bridge {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
   grid-column-start: 1;
+  grid-column-end: -1;
+
+}
+
+.img-for-reason-bridge {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: block;
+}
+
+.img-for-reason-bridge img {
+  display: block;
+}
+
+.reason-devil-bridge-text {
+  grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  background-color: var(--white);
-  list-style-type: none;
-  padding: 5px;
+  background-color: var(--light-cyan);
+  text-align: center;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.reason-devil-bridge-text h3 {
+ font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  padding: 47px 0 25px 0;
+  margin: 0; /*доб паддинг, автоматически появ маргин*/
+}
+
+.reason-devil-bridge-text  span { /*мар и пад не работают*/
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.reason-devil-bridge-text  p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
   margin: 0;
-}*/
+  padding: 23px 0 0 0;
+}
+
+.reason-square {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: var(--very-light-gray);
+  text-align: center;
+}
+
+.reason-road {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: var(--very-light-gray);
+  text-align: center;
+}
+
+.reason-tourists {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: var(--very-light-gray);
+  text-align: center;
+}
+
+.title-of-reason-3-5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-transform: uppercase;
+  padding: 47px 0 25px 0;
+  margin: 0;
+}
+
+.numbers {
+  color: var(--less-black);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.text-of-reason-3-5 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--less-black);
+  margin: 0;
+  padding: 23px 0 54px 0;
+}
+
+
+.offer {
+  background-color: var(--white);
+  text-align: center;
+  padding-top: 58px;
+  /*padding-bottom: хз*/
+
+}
+
+.offer b {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 24px;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.offer p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--less-black);
+  text-align: center;
+  text-transform: uppercase;
+  margin: 28px 0 30px 0;
+}
+
+
+/* всплывающее окно?
+
+.button-find-hotel {
+  display: flex;
+  justify-content: center;
+}
+
+.button-find-hotel button {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+  background-color: var(--grayish-orange);
+  text-transform: uppercase;
+  padding: 30px 125px 30px 124px;
+  text-align: center;
+}
+
+.find {
+  display: flex;
+  justify-content: center;
+}
+
+.find button {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+  background-color:var(--light-cyan);
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  padding: 16px 182px 16px 182px;
+}
+
+*/
+
+.main-footer {
+  background-color: var(--basic-white-90);
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+}
+
+.phone h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--black);
+  text-align: center;
+  margin: 0;
+  padding: 23px 0 0 0;
+}
+
+.phone p {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--black);
+  text-align: center;
+  margin: 0;
+  padding: 9px 0 36px 0;
+}
+
+.footer-social {
+  align-items: center;
+  margin: 0;
+  padding: 41px 0 43px 0;
+}
+
+.footer-social p {
+  color: var(--black);
+  text-transform: uppercase;
+  margin: 0;
+}
