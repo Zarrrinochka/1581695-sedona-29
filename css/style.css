@@ -413,8 +413,6 @@ padding: 16px 182px 16px 182px;
 .body-hotels {
   background-color: var(--white);
   display: grid;
-  grid-template-rows: 217px 86px 150px 150px 150px;
-  grid-row-gap: 1px;
 }
 
 .filter { /* временно, чтобы оттолкнуть нижеследующее*/
@@ -424,8 +422,8 @@ padding: 16px 182px 16px 182px;
 }
 
 .sorting-options {
-  display: grid;
-  grid-template-columns: 235px 115px 81px 82px 686px;
+  display: flex;
+  align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -439,15 +437,9 @@ padding: 16px 182px 16px 182px;
   text-transform: uppercase;
   color: var(--black);
   padding-left: 73px;
+  padding-right: 46px;
 }
 
-.list-of-hotels {
-  list-style-type: none; /* Убираем маркеры для ul li*/
-  margin: 0; /*убираем автоматику ul*/
-  padding: 0;
-  display: grid;
-  grid-auto-rows: 150px 150px 150px;
-}
 
 .sorting {
   font-style: normal;
@@ -457,6 +449,7 @@ padding: 16px 182px 16px 182px;
   align-items: center;
   text-transform: uppercase;
   color: var(--black);
+  padding-right: 40px;
 }
 
 .sorting-options a {
@@ -468,16 +461,36 @@ padding: 16px 182px 16px 182px;
   text-transform: uppercase;
   color: var(--light-cyan);
   text-decoration: none;
+  padding-right: 32px;
+
 }
 
-.hotel1 {
+.list-of-hotels {
+  list-style-type: none; /* Убираем маркеры для ul li*/
+  margin: 0; /*убираем автоматику ul*/
+  padding: 0;
+  display: grid;
+}
+
+.hotel {
+  display: grid;
+  grid-template-columns: 237px 1017px 183px;
 }
 
 .img-hotels {
   text-decoration: none;
+  padding-left: 73px;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
 }
 
-.hotels-names {
+.about-hotel {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.hotels-name {
   text-decoration: none;
   text-transform: uppercase;
   font-style: normal;
@@ -487,9 +500,10 @@ padding: 16px 182px 16px 182px;
   align-items: center;
   text-transform: uppercase;
   color: var(--black);
+  display: block;
 }
 
-.price{
+.price {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -497,7 +511,16 @@ padding: 16px 182px 16px 182px;
   align-items: center;
   text-transform: uppercase;
   color: var(--less-black);
+  margin: 0;
+  padding-top: 7px;
+  padding-right: 9px;
 }
+
+.buttons {
+  margin: 0;
+  padding-top: 15px;
+}
+
 
 .detailed {
   font-style: normal;
@@ -508,6 +531,7 @@ padding: 16px 182px 16px 182px;
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--light-cyan);
+  border: none;
 }
 
 .reservation {
@@ -519,13 +543,30 @@ padding: 16px 182px 16px 182px;
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--grayish-orange);
+  border: none;
+}
+
+.stars-and-rating {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.stars {
+  margin: 0;
+  padding-top: 29px;
 }
 
 .rating {
+  padding-top: 47px;
+  padding-bottom: 30px;
+}
+
+.rating p {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  background-color: var(--background)
+  background-color: var(--background);
+  margin: 0;
 }
