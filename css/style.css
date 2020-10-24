@@ -71,6 +71,9 @@
 
 .banner {
   background-color: var(--banner-color);
+  background-image: url("../img/background photo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
 }
@@ -80,32 +83,32 @@
   padding-bottom: 80px;
 }
 
-.white-background {
+.sedona-is {
   background-color: var(--white);
+  margin: 42px 100px 51px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.sedona-is {
+.sedona-is h1 {
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px;
   color: var(--black);
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 42px;
-  margin: 0;
+  padding-bottom: 16px;
+  margin: 0px;
 }
 
-.sedona-better {
-  font-style: normal;
+.sedona-is h2 {
   font-weight: normal;
   font-size: 14px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
   color: var(--less-black);
-  margin: 0;
-  padding-top: 16px;
-  padding-bottom: 51px;
+  padding-bottom: 16px;
+  margin: 0px;
+}
+
+.sedona-is :last-child {
+  padding-bottom: 0;
 }
 
 .gridtab-of-reasons-and-advices { /* Убираем автоматику только для первого*/
@@ -121,39 +124,48 @@
   grid-template-columns: 400px 400px 400px;
   grid-column-start: 1;
   grid-column-end: -1;
+  background-color: var(--light-cyan);
 }
 
-.reason-text {
+.reason-on-blue {
   grid-column-start: 1;
   grid-column-end: 2;
   background-color: var(--light-cyan);
   text-align: center;
   color: var(--white);
   text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 47px 45px 54px;
 }
 
-.reason-text h3 {
+.reason-on-blue h3
+.reason-on-blue-2 h3
+{
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  padding: 47px 0 25px 0;
-  margin: 0; /*доб паддинг, автоматически появ маргин*/
-}
-
-.reason-text span { /*мар и пад не работают*/
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.reason-text p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
+  padding-bottom: 25px;
   margin: 0;
-  padding: 23px 0 0 0;
+}
+
+.reason-on-blue span
+.reason-on-blue-2 span{
+  display: block;
+  margin: 0px;
+  padding-bottom: 23px;
+}
+
+.reason-on-blue p
+.reason-on-blue-2 p {
+  margin: 0;
+  padding-bottom: 23px;
+}
+
+.reason-on-blue p:last-child
+.reason-on-blue-2 p:last-child {
+  padding-bottom: 0;
 }
 
 .img-for-reason-one {
@@ -169,8 +181,9 @@
   display: grid;
   grid-template-columns: 400px 400px 400px;
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
   text-align: center;
+  margin: 160px 45px 82px;
 }
 
 .advices-list li {
@@ -184,7 +197,7 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
-  padding: 160px 0 25px 0;
+  padding-bottom: 25px;
 }
 
 .advices-list p{
@@ -195,7 +208,11 @@
   text-transform: uppercase;
   color: var(--less-black);
   margin: 0;
-  padding: 0 0 82px 0;
+  padding-bottom: 20px;
+}
+
+.advices-list p:last-child {
+  padding-bottom: 0;
 }
 
 .reason-devil-bridge {
@@ -203,6 +220,7 @@
   grid-template-columns: 400px 400px 400px;
   grid-column-start: 1;
   grid-column-end: -1;
+  background-color: var(--light-cyan);
 
 }
 
@@ -216,79 +234,62 @@
   display: block;
 }
 
-.reason-devil-bridge-text {
+.reason-on-blue-2 {
   grid-column-start: 3;
   grid-column-end: 4;
-  background-color: var(--light-cyan);
   text-align: center;
   color: var(--white);
   text-transform: uppercase;
-}
-
-.reason-devil-bridge-text h3 {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  padding: 47px 0 25px 0;
-  margin: 0; /*доб паддинг, автоматически появ маргин*/
-}
-
-.reason-devil-bridge-text  span { /*мар и пад не работают*/
-  font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+  margin: 47px 45px 54px;
+
 }
 
-.reason-devil-bridge-text  p {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  margin: 0;
-  padding: 23px 0 0 0;
+.reason {
+  background-color: var(--very-light-gray);
+  text-align: center;
+  margin: 47px 20px 54px;
 }
 
-.reason-square {
+.square {
   grid-column-start: 1;
   grid-column-end: 2;
-  background-color: var(--very-light-gray);
-  text-align: center;
 }
 
-.reason-road {
+.road {
   grid-column-start: 2;
   grid-column-end: 3;
-  background-color: var(--very-light-gray);
-  text-align: center;
 }
 
-.reason-tourists {
+.tourists {
   grid-column-start: 3;
   grid-column-end: 4;
-  background-color: var(--very-light-gray);
-  text-align: center;
 }
 
-.title-of-reason-3-5 {
+.reason h3 {
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   text-transform: uppercase;
-  padding: 47px 0 25px 0;
   margin: 0;
+  padding-bottom: 25px;
 }
 
-.numbers {
+.reason span {
+  display: block;
   color: var(--less-black);
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+  margin: 0;
+  padding-bottom: 23px;
 }
 
-.text-of-reason-3-5 {
+.reason p {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -296,16 +297,19 @@
   text-transform: uppercase;
   color: var(--less-black);
   margin: 0;
-  padding: 23px 0 54px 0;
+  padding-bottom: 23px;
 }
 
+.reason p:last-child {
+  padding-bottom: 0;
+}
 
 .offer {
   background-color: var(--white);
   text-align: center;
-  padding-top: 58px;
-  /*padding-bottom: хз*/
-
+  margin: 58px 25px 78px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .offer b {
@@ -313,18 +317,13 @@
   font-size: 30px;
   line-height: 24px;
   color: var(--black);
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .offer p {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: var(--less-black);
-  text-align: center;
-  text-transform: uppercase;
-  margin: 28px 0 30px 0;
+  color: var(--less-black)
 }
 
 
