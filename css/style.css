@@ -24,6 +24,7 @@
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  background-color: var(--white)
 }
 
 .main-nav {
@@ -137,17 +138,16 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  margin: 47px 45px 54px;
+  padding: 37px 45px 44px;
 }
 
-.reason-on-blue h3
+.reason-on-blue h3,
 .reason-on-blue-2 h3
 {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  padding-bottom: 25px;
-  margin: 0;
+  margin-bottom: 25px;
 }
 
 .reason-on-blue span
@@ -183,7 +183,7 @@
   list-style-type: none;
   padding: 0;
   text-align: center;
-  margin: 160px 45px 82px;
+  margin: 0;
 }
 
 .advices-list li {
@@ -197,7 +197,9 @@
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
+  padding-top: 160px;
   padding-bottom: 25px;
+
 }
 
 .advices-list p{
@@ -208,12 +210,11 @@
   text-transform: uppercase;
   color: var(--less-black);
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 82px;
+
 }
 
-.advices-list p:last-child {
-  padding-bottom: 0;
-}
+
 
 .reason-devil-bridge {
   display: grid;
@@ -243,7 +244,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  margin: 47px 45px 54px;
+  margin: 37px 45px 44px;
 
 }
 
