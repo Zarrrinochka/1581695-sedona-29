@@ -141,31 +141,36 @@
   padding: 37px 45px 44px;
 }
 
+
+h3 {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
 .reason-on-blue h3,
 .reason-on-blue-2 h3
 {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  margin-bottom: 25px;
 }
 
-.reason-on-blue span
+.reason-on-blue span,
 .reason-on-blue-2 span{
   display: block;
   margin: 0px;
   padding-bottom: 23px;
 }
 
-.reason-on-blue p
+.reason-on-blue,
 .reason-on-blue-2 p {
   margin: 0;
   padding-bottom: 23px;
 }
 
-.reason-on-blue p:last-child
+.reason-on-blue p:last-child,
 .reason-on-blue-2 p:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .img-for-reason-one {
@@ -245,13 +250,12 @@
   font-size: 14px;
   line-height: 21px;
   margin: 37px 45px 44px;
-
 }
 
 .reason {
   background-color: var(--very-light-gray);
   text-align: center;
-  margin: 47px 20px 54px;
+  padding: 47px 20px 54px;
 }
 
 .square {
