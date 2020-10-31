@@ -478,22 +478,24 @@ padding: 16px 182px 16px 182px;
 
 .hotel {
   display: grid;
-  grid-template-columns: 237px 1017px 183px;
+  grid-template-columns: 210px 810px 180px;
 }
 
 .img-hotels {
   text-decoration: none;
-  padding-left: 73px;
+  margin-left: 73px;
   grid-column-start: 1;
   grid-column-end: 2;
-
 }
 
 .about-hotel {
   grid-column-start: 2;
   grid-column-end: 3;
+  display: inline-block;
 }
 
+
+}
 .hotels-name {
   text-decoration: none;
   text-transform: uppercase;
@@ -505,6 +507,7 @@ padding: 16px 182px 16px 182px;
   text-transform: uppercase;
   color: var(--black);
   display: block;
+  margin-left: 29px;
 }
 
 .price {
@@ -516,13 +519,12 @@ padding: 16px 182px 16px 182px;
   text-transform: uppercase;
   color: var(--less-black);
   margin: 0;
-  padding-top: 7px;
-  padding-right: 9px;
+  padding: 0;
 }
 
-.buttons {
-  margin: 0;
-  padding-top: 15px;
+.hotel-type {
+  margin-left: 29px;
+  display: block;
 }
 
 
