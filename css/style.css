@@ -1,16 +1,21 @@
 :root {
   --background: #F2F2F2;
   --white: #ffffff;
+  --white-30: #ffffff30;
   --basic-background: #888888;
   --black: #000000;
+  --black-30: #00000030;
   --less-black: #333333;
   --light-cyan: #81B3D2;
+  --dark-cyan: #669EC0;
+  --very-dark-cyan: #5496BD;
   --very-light-gray: #EEEEEE;
   --gray-for-borders: #E5E5E5;
   --grayish-orange: #766357;
   --basic-white-90: #ffffff90;
   --banner-color: #4979a7;
-
+  --dark-brown: #503E33;
+  --brown: #604E43;
 }
 
 .page-body {
@@ -68,6 +73,24 @@
   line-height: 26px;
   text-transform: uppercase;
   color: var(--black);
+}
+
+.aim:hover {
+  color: var(--light-cyan);
+}
+
+.nav-text-press:active {
+  color: var(--black-30);
+}
+
+.nav-text-active {
+  color: var(--grayish-orange);
+  text-decoration: none; /*убираем подчеркивание у "a"*/
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 .banner {
@@ -219,15 +242,12 @@ h3 {
 
 }
 
-
-
 .reason-devil-bridge {
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-column-start: 1;
   grid-column-end: -1;
   background-color: var(--light-cyan);
-
 }
 
 .img-for-reason-bridge {
@@ -416,7 +436,6 @@ padding: 16px 182px 16px 182px;
 
 .body-hotels {
   background-color: var(--white);
-  display: grid;
 }
 
 .filter { /* временно, чтобы оттолкнуть нижеследующее*/
@@ -456,7 +475,8 @@ padding: 16px 182px 16px 182px;
   padding-right: 40px;
 }
 
-.sorting-options a {
+
+.sort-var-act {
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -466,14 +486,36 @@ padding: 16px 182px 16px 182px;
   color: var(--light-cyan);
   text-decoration: none;
   padding-right: 32px;
+}
 
+.sort-var {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--black-30);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  padding-right: 32px;
+}
+
+.sort-var:hover {
+  color: var(--light-cyan);
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.sort-var:active {
+  color: var(--black);
+  text-decoration-line: none;
 }
 
 .list-of-hotels {
   list-style-type: none; /* Убираем маркеры для ul li*/
   margin: 0; /*убираем автоматику ul*/
   padding: 0;
-  display: grid;
 }
 
 .hotel {
@@ -491,11 +533,23 @@ padding: 16px 182px 16px 182px;
 .about-hotel {
   grid-column-start: 2;
   grid-column-end: 3;
-  display: inline-block;
-}
-
 
 }
+.hotel-col-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.left-col-hotel {
+  margin-left: 29px;
+  margin-right: 9px;
+  margin-top: 7px;
+}
+.right-col-hotel {
+  margin-top: 7px;
+}
+
 .hotels-name {
   text-decoration: none;
   text-transform: uppercase;
@@ -506,8 +560,15 @@ padding: 16px 182px 16px 182px;
   align-items: center;
   text-transform: uppercase;
   color: var(--black);
-  display: block;
   margin-left: 29px;
+}
+
+.hotels-name:hover {
+color: var(--light-cyan);
+}
+
+.hotels-name:active {
+  color: var(--black-30)
 }
 
 .price {
@@ -518,15 +579,24 @@ padding: 16px 182px 16px 182px;
   align-items: center;
   text-transform: uppercase;
   color: var(--less-black);
-  margin: 0;
+  margin-bottom: 18px;
   padding: 0;
+  display: block;
+}
+
+.detailed:hover {
+  background-color: var(--dark-cyan);
+}
+
+.detailed:active {
+  background-color: var(--very-dark-cyan);
+  color: var(--white-30);
 }
 
 .hotel-type {
   margin-left: 29px;
   display: block;
 }
-
 
 .detailed {
   font-style: normal;
@@ -538,6 +608,7 @@ padding: 16px 182px 16px 182px;
   color: var(--white);
   background-color: var(--light-cyan);
   border: none;
+  padding: 3px 17px 3px 16px;
 }
 
 .reservation {
@@ -550,11 +621,23 @@ padding: 16px 182px 16px 182px;
   color: var(--white);
   background-color: var(--grayish-orange);
   border: none;
+  padding: 3px 17px 3px 16px;
+}
+
+.reservation:active {
+  color: var(--white-30);
+  background-color: var(--brown);
+}
+
+.reservation:hover {
+  background-color: var(--dark-brown);
 }
 
 .stars-and-rating {
   grid-column-start: 3;
   grid-column-end: 4;
+  display: flex;
+  flex-direction: column;
 }
 
 .stars {
@@ -563,16 +646,12 @@ padding: 16px 182px 16px 182px;
 }
 
 .rating {
-  padding-top: 47px;
-  padding-bottom: 30px;
-}
-
-.rating p {
+  margin-top: 47px;
+  margin-bottom: 30px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   background-color: var(--background);
-  margin: 0;
 }
