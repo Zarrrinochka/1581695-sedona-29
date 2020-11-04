@@ -428,7 +428,17 @@ padding: 16px 182px 16px 182px;
   margin: 0;
 }
 
+.fs-tw::after{
+  content: url("../img/twitter-icon.jpg");
+}
 
+.fs-fb::after{
+  content: url("../img/facebook-icon.jpg");
+}
+
+.fs-ub::after{
+  content: url("../img/utube-icon.jpg");
+}
 
 /*hotels*/
 
@@ -441,7 +451,8 @@ padding: 16px 182px 16px 182px;
 .filter { /* временно, чтобы оттолкнуть нижеследующее*/
   height: 217px;
   display: block;
-  background-color: var(--light-cyan)
+  background-color: var(--light-cyan);
+  background-image: url("../img/background-blur.jpg");
 }
 
 .sorting-options {
