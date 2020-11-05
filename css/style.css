@@ -18,6 +18,17 @@
   --brown: #604E43;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .page-body {
   background-color: var(--background);
   font-family: "PT Sans", "Arial", "sans-serif";
@@ -425,10 +436,23 @@ padding: 16px 182px 16px 182px;
 .footer-social p {
   color: var(--black);
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 8px 0 0;
+  display: inline-block;
 }
 
-.fs-tw::after{
+.social-list {
+  list-style-type: none; /* Убираем маркеры для ul li*/
+  margin: 0; /*убираем автоматику ul*/
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-list a {
+  margin-right: 6px;
+}
+
+.fs-tw::after {
   content: url("../img/twitter-icon.jpg");
 }
 
@@ -439,6 +463,8 @@ padding: 16px 182px 16px 182px;
 .fs-ub::after{
   content: url("../img/utube-icon.jpg");
 }
+
+
 
 /*hotels*/
 
