@@ -427,7 +427,6 @@ padding: 16px 182px 16px 182px;
 }
 
 .footer-social {
-  align-items: center;
   margin: 0;
   padding: 41px 0 43px 0;
 }
@@ -437,6 +436,7 @@ padding: 16px 182px 16px 182px;
   text-transform: uppercase;
   margin: 0 8px 0 0;
   display: inline-block;
+  transform: translateY(-50%);
 }
 
 .social-list {
