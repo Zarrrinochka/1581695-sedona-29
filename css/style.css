@@ -457,30 +457,28 @@ padding: 16px 182px 16px 182px;
 }
 
 .social-list a::before {
-content: "";
-position: absolute;
-display: block;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
-.fs-tw::after {
-  content: url("../img/twitter-icon.svg");
-  background-position: center;
+.fs-tw::before {
+  background-image: url("../img/twitter-icon.svg");
 }
 
-.fs-fb::after{
-  content: url("../img/facebook-icon.svg");
-  background-position: center;
-
+.fs-fb::before{
+  background-image: url("../img/facebook-icon.svg");
 }
 
-.fs-ub::after{
-  content: url("../img/utube-icon.svg");
-  background-position: center;
+.fs-ub::before{
+  background-image: url("../img/youtube-icon.svg");
 }
 
 
@@ -620,7 +618,7 @@ right: 0;
 }
 
 .hotels-name:hover {
-color: var(--light-cyan);
+  color: var(--light-cyan);
 }
 
 .hotels-name:active {
