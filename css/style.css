@@ -473,14 +473,27 @@ padding: 16px 182px 16px 182px;
   background-image: url("../img/twitter-icon.svg");
 }
 
-.fs-fb::before{
+.fs-fb::before {
   background-image: url("../img/facebook-icon.svg");
 }
 
-.fs-ub::before{
+.fs-ub::before {
   background-image: url("../img/youtube-icon.svg");
 }
 
+.social-list a:hover {
+  background-color: var(--dark-cyan);
+}
+
+.social-list a:active {
+  background-color: var(--very-dark-cyan);
+}
+
+.fs-ub:active::before,
+.fs-tw:active::before,
+.fs-fb:active::before {
+  opacity: 30%;
+}
 
 
 /*hotels*/
