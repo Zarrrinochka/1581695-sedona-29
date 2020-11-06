@@ -241,7 +241,7 @@ h3 {
 
 }
 
-.advices-list p{
+.advices-list p {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -250,7 +250,6 @@ h3 {
   color: var(--less-black);
   margin: 0;
   padding-bottom: 82px;
-
 }
 
 .reason-devil-bridge {
@@ -454,13 +453,13 @@ padding: 16px 182px 16px 182px;
   position: relative;
   width: 46px;
   height: 48px;
-  background-color: var(--light-cyan)
+  background-color: var(--light-cyan);
 }
 
 .social-list a::before {
 content: "";
-display: block;
 position: absolute;
+display: block;
 top: 0;
 bottom: 0;
 left: 0;
@@ -470,14 +469,18 @@ right: 0;
 
 .fs-tw::after {
   content: url("../img/twitter-icon.svg");
+  background-position: center;
 }
 
 .fs-fb::after{
   content: url("../img/facebook-icon.svg");
+  background-position: center;
+
 }
 
 .fs-ub::after{
   content: url("../img/utube-icon.svg");
+  background-position: center;
 }
 
 
