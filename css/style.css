@@ -450,18 +450,34 @@ padding: 16px 182px 16px 182px;
 
 .social-list a {
   margin-right: 6px;
+  display: block;
+  position: relative;
+  width: 46px;
+  height: 48px;
+  background-color: var(--light-cyan)
 }
 
+.social-list a::before {
+content: "";
+display: block;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+}
+
+
 .fs-tw::after {
-  content: url("../img/twitter-icon.jpg");
+  content: url("../img/twitter-icon.svg");
 }
 
 .fs-fb::after{
-  content: url("../img/facebook-icon.jpg");
+  content: url("../img/facebook-icon.svg");
 }
 
 .fs-ub::after{
-  content: url("../img/utube-icon.jpg");
+  content: url("../img/utube-icon.svg");
 }
 
 
