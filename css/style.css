@@ -16,6 +16,8 @@
   --banner-color: #4979a7;
   --dark-brown: #503E33;
   --brown: #604E43;
+  --html-ac-logo: #BDBBBC;
+  --grey-for-icon-up-down: #CACACA
 }
 
 .visually-hidden {
@@ -86,7 +88,8 @@
   color: var(--black);
 }
 
-.aim:hover {
+.aim:hover,
+.aim:focus {
   color: var(--light-cyan);
 }
 
@@ -105,18 +108,19 @@
 }
 
 .banner {
+  padding-top: 77px;
+  padding-bottom: 80px;
   background-color: var(--banner-color);
-  background-image: url("../img/background photo.jpg");
-  background-size: cover;
+  background-image:
+  url("../img/Shape.svg"),
+  url("../img/background photo.jpg");
+  background-size: 101%, cover;
+  background-position: center bottom, center;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
 }
 
-.img-center {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
 
 .sedona-is {
   background-color: var(--white);
@@ -130,8 +134,8 @@
   font-weight: bold;
   font-size: 21px;
   color: var(--black);
-  padding-bottom: 16px;
   margin: 0px;
+  margin-bottom: 45px;
 }
 
 .sedona-is h2 {
@@ -172,9 +176,14 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  padding: 37px 45px 44px;
+  padding: 48px;
 }
 
+
+.reason-on-blue-2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
 
 h3 {
   margin: 0;
@@ -193,7 +202,7 @@ h3 {
 .reason-on-blue-2 span{
   display: block;
   margin: 0px;
-  padding-bottom: 23px;
+  margin-bottom: 25px;
 }
 
 .reason-on-blue,
@@ -238,7 +247,6 @@ h3 {
   margin: 0;
   padding-top: 160px;
   padding-bottom: 25px;
-
 }
 
 .advices-list p {
@@ -250,6 +258,22 @@ h3 {
   color: var(--less-black);
   margin: 0;
   padding-bottom: 82px;
+}
+
+ .advice-list li::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.advice-house::after {
+  background-image: url("../img/advice-house.svg");
 }
 
 .reason-devil-bridge {
@@ -268,18 +292,6 @@ h3 {
 
 .img-for-reason-bridge img {
   display: block;
-}
-
-.reason-on-blue-2 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  text-align: center;
-  color: var(--white);
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  margin: 37px 45px 44px;
 }
 
 .reason {
@@ -342,7 +354,7 @@ h3 {
 .offer {
   background-color: var(--white);
   text-align: center;
-  margin: 58px 25px 78px;
+  padding: 58px 380px 128px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -352,13 +364,18 @@ h3 {
   font-size: 30px;
   line-height: 24px;
   color: var(--black);
+  margin-bottom: 33px;
+  display: block;
 }
 
 .offer p {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: var(--less-black)
+  color: var(--less-black);
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -406,37 +423,49 @@ padding: 16px 182px 16px 182px;
   grid-template-columns: 400px 400px 400px;
 }
 
-.phone h3 {
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  color: var(--black);
-  text-align: center;
-  margin: 0;
-  padding: 23px 0 0 0;
+.phone {
+  padding-left: 78px;
 }
 
+.phone h3,
 .phone p {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--black);
   text-align: center;
-  margin: 0;
-  padding: 9px 0 36px 0;
+  display: block;
+}
+
+.phone h3 {
+  display: block;
+  margin: 20px 0 9px 0;
+  padding: 0;
+}
+
+.phone p {
+  display: block;
+  margin: 0 0 39px 0;
+  padding: 0;
+}
+
+.phone a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer-social {
-  margin: 0;
-  padding: 41px 0 43px 0;
+  margin: 34px 0 36px 6px;
 }
 
 .footer-social p {
   color: var(--black);
   text-transform: uppercase;
-  margin: 0 8px 0 0;
+  margin: 6px 3px 7px 60px;
   display: inline-block;
   transform: translateY(-50%);
+  font-size: 14px;
+  line-height: 26px;
 }
 
 .social-list {
@@ -468,7 +497,6 @@ padding: 16px 182px 16px 182px;
   background-repeat: no-repeat;
 }
 
-
 .fs-tw::before {
   background-image: url("../img/twitter-icon.svg");
 }
@@ -481,7 +509,8 @@ padding: 16px 182px 16px 182px;
   background-image: url("../img/youtube-icon.svg");
 }
 
-.social-list a:hover {
+.social-list a:hover,
+.social-list a:focus {
   background-color: var(--dark-cyan);
 }
 
@@ -514,8 +543,7 @@ padding: 16px 182px 16px 182px;
 .sorting-options {
   display: flex;
   align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 40px 30px 75px;
 }
 
 .found {
@@ -526,10 +554,8 @@ padding: 16px 182px 16px 182px;
   align-items: center;
   text-transform: uppercase;
   color: var(--black);
-  padding-left: 73px;
-  padding-right: 46px;
+  margin-right: 46px;
 }
-
 
 .sorting {
   font-style: normal;
@@ -539,9 +565,8 @@ padding: 16px 182px 16px 182px;
   align-items: center;
   text-transform: uppercase;
   color: var(--black);
-  padding-right: 40px;
+  margin-right: 40px;
 }
-
 
 .sort-var-act {
   font-style: normal;
@@ -552,7 +577,7 @@ padding: 16px 182px 16px 182px;
   text-transform: uppercase;
   color: var(--light-cyan);
   text-decoration: none;
-  padding-right: 32px;
+  margin-right: 33px;
 }
 
 .sort-var {
@@ -565,10 +590,11 @@ padding: 16px 182px 16px 182px;
   color: var(--black-30);
   text-decoration: underline;
   text-decoration-style: dotted;
-  padding-right: 32px;
+  margin-right: 33px;
 }
 
-.sort-var:hover {
+.sort-var:hover,
+.sort-var:focus {
   color: var(--light-cyan);
   text-decoration: underline;
   text-decoration-style: dotted;
@@ -579,42 +605,63 @@ padding: 16px 182px 16px 182px;
   text-decoration-line: none;
 }
 
+.sort-var-rating {
+  margin-right: 501px;
+}
+
+.icon-up-dir {
+  fill: var(--grey-for-icon-up-down);
+  margin: 0 12px 0 0;
+}
+
+.icon-down-dir {
+  fill: var(--light-cyan);
+}
+
+.icon-up-dir:hover,
+.icon-down-dir:hover {
+  fill: var(--black);
+}
+
+.icon-up-dir:active,
+.icon-down-dir:active {
+  fill: var(--light-cyan);
+}
+
 .list-of-hotels {
   list-style-type: none; /* Убираем маркеры для ul li*/
-  margin: 0 73px 0 73px;
+  margin: 0 71px 0 75px;
   padding: 0;
 }
 
 .hotel {
   display: grid;
-  grid-template-columns: 130px 810px 110px
+  grid-template-columns: 135px 810px 110px
 }
 
 .img-hotels {
   text-decoration: none;
   grid-column-start: 1;
   grid-column-end: 2;
-  margin: 30px 0 30px 0;
+  margin: 32px 0 28px 0;
 }
 
 .about-hotel {
   grid-column-start: 2;
   grid-column-end: 3;
-  margin: 30px 0 30px 0;
+  padding-top: 25px;
+  padding-left: 25px;
 }
+
 .hotel-col-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-top: 9px;
 }
 
 .left-col-hotel {
-  margin-left: 29px;
   margin-right: 9px;
-  margin-top: 7px;
-}
-.right-col-hotel {
-  margin-top: 7px;
 }
 
 .hotels-name {
@@ -627,10 +674,10 @@ padding: 16px 182px 16px 182px;
   align-items: center;
   text-transform: uppercase;
   color: var(--black);
-  margin-left: 29px;
 }
 
-.hotels-name:hover {
+.hotels-name:hover,
+.hotels-name:focus {
   color: var(--light-cyan);
 }
 
@@ -651,7 +698,8 @@ padding: 16px 182px 16px 182px;
   display: block;
 }
 
-.detailed:hover {
+.detailed:hover,
+.detailed:focus {
   background-color: var(--dark-cyan);
 }
 
@@ -696,22 +744,45 @@ padding: 16px 182px 16px 182px;
   background-color: var(--brown);
 }
 
-.reservation:hover {
+.reservation:hover,
+.reservation:focus {
   background-color: var(--dark-brown);
 }
 
 .stars-and-rating {
   grid-column-start: 3;
   grid-column-end: 4;
+  padding-top: 32px;
 }
 
 .stars {
-  margin: 0;
-  padding-top: 29px;
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+  height: 17px;
+}
+
+.stars-4 {
+  margin: 0 0 0 17px;
+  width: 94px;
+}
+
+.stars-3 {
+  width: 67px;
+  margin: 0 0 0 45px;
+}
+
+.stars-2 {
+  margin: 0 0 0 70px;
+  width: 42px;
+}
+
+.stars-1 {
+  margin: 0 0 0 100px;
+  width: 30px;
 }
 
 .rating {
-  margin-top: 96px;
+  margin-top: 47px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -719,4 +790,13 @@ padding: 16px 182px 16px 182px;
   text-transform: uppercase;
   background-color: var(--background);
   padding: 3px 15px 3px 12px;
+}
+
+.logo-html-ac:hover svg,
+.logo-html-ac:focus svg {
+  fill: var(--light-cyan);
+}
+
+.logo-html-ac:active svg {
+  fill: var(--html-ac-logo);
 }
