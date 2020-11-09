@@ -259,7 +259,7 @@ h3 {
   padding-bottom: 82px;
 }
 
- .advice-house::before  {
+.advice-house::before  {
   content: url("../img/advice-house.svg");
   display: block;
   background-position: center;
@@ -267,18 +267,18 @@ h3 {
 }
 
 .advice-food::before  {
- content: url("../img/advice-food.svg");
- display: block;
- background-position: center;
- margin: 60px 0 25px 0;
+  content: url("../img/advice-food.svg");
+  display: block;
+  background-position: center;
+  margin: 60px 0 25px 0;
 }
 
 
 .advice-souvenir::before  {
- content: url("../img/advice-souvenir.svg");
- display: block;
- background-position: center;
- margin: 55px 0 25px 0;
+  content: url("../img/advice-souvenir.svg");
+  display: block;
+  background-position: center;
+  margin: 55px 0 25px 0;
 }
 
 
@@ -411,46 +411,46 @@ h3 {
 }
 
 .button-find-hotel button {
-font-weight: bold;
-font-style: normal;
-font-size: 21px;
-line-height: 26px;
-color: var(--white);
-background-color: var(--grayish-orange);
-text-transform: uppercase;
-padding: 30px 125px 30px 124px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+  background-color: var(--grayish-orange);
+  text-transform: uppercase;
+  padding: 30px 125px 30px 124px;
 }
 
 input {
-    overflow: visible;
-    background-color: var(--background);
-    border: none;
-    width: 346px;
-    height: 38px;
-    color: var(--black);
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 26px;
-    text-align: left;
+  overflow: visible;
+  background-color: var(--background);
+  border: none;
+  width: 346px;
+  height: 38px;
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
 }
 
 
 
 .find {
-display: flex;
-justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .find button {
-font-weight: bold;
-font-size: 21px;
-line-height: 26px;
-color: var(--white);
-background-color:var(--light-cyan);
-text-align: center;
-text-transform: uppercase;
-align-items: center;
-padding: 16px 182px 16px 182px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+  background-color:var(--light-cyan);
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  padding: 16px 182px 16px 182px;
 }
 
 
