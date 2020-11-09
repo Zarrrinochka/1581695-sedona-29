@@ -92,16 +92,33 @@
         <b> Заинтересовались? </b>
         <p> Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне </p>
       </div>
-      <img src="img/map.jpg" width="1199" height="594" alt="map">
 
-      <!-- всплывающее окно ?
-      <div class="button-find-hotel">
-      <button> Поиск гостинницы в Седоне </button>
-    </div>
+      <div class="find-hotel">Поиск гостинницы в Седоне</div>
 
-    <div class="find">
-    <button type="button"> Найти </button>
-  </div> -->
+
+      <section class="modal-find-hotel">
+         <form class="appointment-form" action="https" method="post">
+           <p class="appointment-item-dates">
+             <label for="appointment-date-in">Дата заезда:</label>
+             <input id="appointment-date-in" type="text" name="date" placeholder="24 апреля 2017">
+           </p>
+           <p class="appointment-item-dates">
+             <label for="appointment-date-out">Дата выезда:</label>
+             <input id="appointment-date-out" type="text" name="date" placeholder="4 июля 2017">
+           </p>
+           <p class="appointment-item-person-kids">
+             <label for="appointment-person">Взрослые:</label>
+             <input id="appointment-person" type="number" name="person" placeholder="2">
+           </p>
+           <p class="appointment-item-person-kids">
+             <label for="appointment-person">Дети:</label>
+             <input id="appointment-person" type="number" name="kids" placeholder="0">
+           </p>
+           <button class="find" type="button"> Найти </button>
+         </form>
+       </section>
+
+       <img src="img/map.jpg" width="1199" height="594" alt="map">
 
 
 </main>

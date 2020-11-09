@@ -360,7 +360,7 @@ h3 {
 .offer {
   background-color: var(--white);
   text-align: center;
-  padding: 58px 380px 128px;
+  padding: 58px 380px 30px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -384,12 +384,30 @@ h3 {
   padding: 0;
 }
 
+.modal-find-hotel {
+  display: block;
+  width: 568px;
+  height: 395px;
+  background: var(--white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
 
-/* всплывающее окно?
-
-.button-find-hotel {
-display: flex;
-justify-content: center;
+.find-hotel {
+  background-color: var(--white);
+  text-align: center;
+  padding: 30px 124px;
+  margin-left: 316px;
+  margin-right: 316px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--white);
+  background-color: var(--grayish-orange);
 }
 
 .button-find-hotel button {
@@ -401,8 +419,22 @@ color: var(--white);
 background-color: var(--grayish-orange);
 text-transform: uppercase;
 padding: 30px 125px 30px 124px;
-text-align: center;
 }
+
+input {
+    overflow: visible;
+    background-color: var(--background);
+    border: none;
+    width: 346px;
+    height: 38px;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+}
+
+
 
 .find {
 display: flex;
@@ -421,7 +453,7 @@ align-items: center;
 padding: 16px 182px 16px 182px;
 }
 
-*/
+
 
 .main-footer {
   background-color: var(--basic-white-90);
