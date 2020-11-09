@@ -439,9 +439,6 @@ input {
 .find {
   display: flex;
   justify-content: center;
-}
-
-.find button {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -452,7 +449,6 @@ input {
   align-items: center;
   padding: 16px 182px 16px 182px;
 }
-
 
 
 .main-footer {
