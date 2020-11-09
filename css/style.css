@@ -112,8 +112,8 @@
   padding-bottom: 80px;
   background-color: var(--banner-color);
   background-image:
-  url("../img/Shape.svg"),
-  url("../img/background photo.jpg");
+  url("../img/shape-for-banner.svg"),
+  url("../img/background-photo.jpg");
   background-size: 101%, cover;
   background-position: center bottom, center;
   background-repeat: no-repeat;
@@ -245,8 +245,7 @@ h3 {
   line-height: 21px;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 160px;
-  padding-bottom: 25px;
+  padding: 0 0 25px 0;
 }
 
 .advices-list p {
@@ -260,21 +259,28 @@ h3 {
   padding-bottom: 82px;
 }
 
- .advice-list li::after {
-  content: "";
-  position: absolute;
+ .advice-house::before  {
+  content: url("../img/advice-house.svg");
   display: block;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-position: center;
-  background-repeat: no-repeat;
+  margin: 60px 0 25px 0;
 }
 
-.advice-house::after {
-  background-image: url("../img/advice-house.svg");
+.advice-food::before  {
+ content: url("../img/advice-food.svg");
+ display: block;
+ background-position: center;
+ margin: 60px 0 25px 0;
 }
+
+
+.advice-souvenir::before  {
+ content: url("../img/advice-souvenir.svg");
+ display: block;
+ background-position: center;
+ margin: 55px 0 25px 0;
+}
+
 
 .reason-devil-bridge {
   display: grid;
@@ -753,6 +759,9 @@ padding: 16px 182px 16px 182px;
   grid-column-start: 3;
   grid-column-end: 4;
   padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .stars {
@@ -762,22 +771,18 @@ padding: 16px 182px 16px 182px;
 }
 
 .stars-4 {
-  margin: 0 0 0 17px;
   width: 94px;
 }
 
 .stars-3 {
   width: 67px;
-  margin: 0 0 0 45px;
 }
 
 .stars-2 {
-  margin: 0 0 0 70px;
   width: 42px;
 }
 
 .stars-1 {
-  margin: 0 0 0 100px;
   width: 30px;
 }
 
