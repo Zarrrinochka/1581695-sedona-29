@@ -361,6 +361,7 @@ h3 {
   background-color: var(--white);
   text-align: center;
   padding: 58px 380px 30px;
+  margin-bottom: 15px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -387,7 +388,6 @@ h3 {
 .modal-find-hotel {
   display: block;
   width: 568px;
-  height: 395px;
   background: var(--white);
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   margin-left: auto;
@@ -398,14 +398,14 @@ h3 {
 
 .find-hotel {
   background-color: var(--white);
-  text-align: center;
-  padding: 30px 124px;
+  padding: 30px 0 30px 140px;
   margin-left: 316px;
   margin-right: 316px;
+  border: none;
   text-transform: uppercase;
-  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  font-weight: bold;
   color: var(--white);
   background-color: var(--grayish-orange);
 }
@@ -434,20 +434,31 @@ input {
   text-align: left;
 }
 
+.appointment-form {
+  padding: 55px;
+  display: block;
+  }
 
+p.appointment-item-dates,
+p.appointment-item-person-kids {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+}
 
 .find {
   display: flex;
-  justify-content: center;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   color: var(--white);
   background-color:var(--light-cyan);
-  text-align: center;
   text-transform: uppercase;
-  align-items: center;
   padding: 16px 182px 16px 182px;
+  border: none;
+  margin: 0;
 }
 
 
