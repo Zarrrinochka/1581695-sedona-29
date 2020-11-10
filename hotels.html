@@ -18,16 +18,16 @@
           <li><a class="nav-text nav-text-press aim" href="#">Информация</a></li>
           <li><a class="nav-text nav-text-press aim" href="#">Фото и видео</a></li>
           <li><a class="nav-text nav-text-press aim" href="#">Карта штата</a></li>
-          <li><a class="nav-text-active" href="#">Гостиницы</a></li>
+          <li><a class="nav-text nav-text-press aim nav-text-active" href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="body-hotels">
         <div class="filter">
-          <form class="" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="pool-parking-wifi">
-              <fieldset>
+              <fieldset class="filter-item">
                 <legend>Инфраструктура:</legend>
                 <p class="cheсkbox-wrapper">
                   <input class="visually-hidden cheсkbox-input" type="checkbox" name="pool" id="pool" checked>
@@ -44,31 +44,29 @@
               </fieldset>
             </div>
             <div class="hotel-motel-appartment">
-              <fieldset>
+              <fieldset class="filter-item">
                 <legend>Тип жилья:</legend>
                 <p class="cheсkbox-wrapper">
                   <input class="visually-hidden cheсkbox-input" type="checkbox" name="hotel" id="hotel" checked>
                   <label class="cheсkbox-label" for="hotel">Гостиница</label>
                 </p>
                 <p class="cheсkbox-wrapper">
-                  <input class="visually-hidden cheсkbox-input" type="checkbox" name="motel" id="motel">
+                  <input class="visually-hidden cheсkbox-input" type="checkbox" name="motel" id="motel" checked>
                   <label class="cheсkbox-label" for="motel">Мотель</label>
                 </p>
                 <p class="cheсkbox-wrapper">
-                  <input class="visually-hidden cheсkbox-input" type="checkbox" name="appartment" id="appartment" >
-                  <label class="cheсkbox-label" for="appointment">Аппартаменты</label>
+                  <input class="visually-hidden cheсkbox-input" type="checkbox" name="appartment" id="appartment" checked>
+                  <label class="cheсkbox-label" for="appointment">Апартаменты</label>
                 </p>
               </fieldset>
             </div>
-          </form>
-          <form method="get" action="https://echo.htmlacademy.ru">
-            <div class=" background-background">
-              <fieldset class="filter-item">
+            <div class="hotel-price-range">
+              <fieldset class="filter-item filter-item-price">
                 <legend>Стоимость в сутки (р):</legend>
                 <div class="range-filter">
                   <div class="price-controls">
-                    <label class="min-price">от<input type="number" name="min-price" value="0"></label>
-                    <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+                    <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                   </div>
                   <div class="range-controls">
                     <div class="scale">
@@ -79,8 +77,8 @@
                   </div>
                   <button class="show" type="button" name="button">показать</button>
                 </div>
-            </fieldset>
-          </div>
+              </fieldset>
+            </div>
           </form>
         </div>
         <div class="sorting-options">
