@@ -445,7 +445,7 @@ h3 {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 26px;
+  line-height: 21px;
   text-align: left;
   box-sizing: border-box;
 }
@@ -728,13 +728,13 @@ p.appointment-item-dates {
 .sorting-options {
   display: flex;
   align-items: center;
-  padding: 32px 40px 30px 75px;
+  padding: 27px 40px 30px 75px;
 }
 
 li.hotel {
   position: relative;
   padding: 31px 0;
-  padding-top: 25px;
+  padding-top: 26px;
 }
 
 li.hotel::before {
@@ -770,6 +770,7 @@ ul.last-line::after {
   text-transform: uppercase;
   color: var(--black);
   margin-right: 46px;
+  padding-top: 3px;
 }
 
 .sorting {
@@ -879,7 +880,7 @@ ul.last-line::after {
 }
 
 .left-col-hotel {
-  margin-right: 12px;
+  margin-right: 9px;
 }
 
 .hotels-name {
@@ -913,7 +914,7 @@ ul.last-line::after {
   align-items: center;
   text-transform: uppercase;
   color: var(--less-black);
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   padding: 0;
   display: block;
 }
@@ -984,7 +985,7 @@ ul.last-line::after {
 }
 
 .stars-4 {
-  width: 87px;
+  width: 91px;
 }
 
 .stars-3 {
@@ -1101,7 +1102,7 @@ ul.last-line::after {
 
 .range-controls {
   position: relative;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
   margin-top: 20px;
   width: 316px;
   height: 2px;
@@ -1141,7 +1142,7 @@ ul.last-line::after {
 }
 
 .range-controls .toggle-max {
-  left: 249px;
+  left: 260px;
 }
 
 .price-controls {
