@@ -1121,8 +1121,9 @@ ul.last-line::after {
 
 .range-controls .toggle {
   position: absolute;
-  top: -10px;
-  left: 0;
+  top: 50%;
+  left: 10px;
+  transform: translate(-50%, -50%);
   width: 4px;
   height: 4px;
   padding: 0;
