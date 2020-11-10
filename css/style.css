@@ -1134,8 +1134,9 @@ ul.last-line::after {
 }
 
 .range-controls .toggle:hover {
-  height: 21px;
-  width: 23px;
+    width: 4px;
+    height: 4px;
+    border: 9px solid #ffffff;
 }
 
 .range-controls .toggle-max {
