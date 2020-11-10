@@ -12,7 +12,7 @@
   --very-light-gray: #EEEEEE;
   --gray-for-borders: #E5E5E5;
   --grayish-orange: #766357;
-  --basic-white-90: #ffffff90;
+  --basic-white-90: rgba(255, 255, 255, 0.9);
   --banner-color: #4979a7;
   --dark-brown: #503E33;
   --brown: #604E43;
@@ -42,7 +42,8 @@
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  background-color: var(--white)
+  background-color: var(--white);
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .main-nav {
@@ -358,12 +359,14 @@ h3 {
 }
 
 .offer {
+  position: relative;
+  width: 100%;
   background-color: var(--white);
   text-align: center;
-  padding: 58px 380px 30px;
-  margin-bottom: 15px;
-  text-align: center;
+  padding: 0;
+  padding-top: 58px;
   text-transform: uppercase;
+  box-sizing: border-box;
 }
 
 .offer b {
@@ -385,22 +388,9 @@ h3 {
   padding: 0;
 }
 
-.modal-find-hotel {
-  display: block;
-  width: 568px;
-  background: var(--white);
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  margin-left: auto;
-  margin-right: auto;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 .find-hotel {
-  background-color: var(--white);
-  padding: 30px 0 30px 140px;
-  margin-left: 316px;
-  margin-right: 316px;
+  padding: 30px 50px;
+  margin-top: 40px;
   border: none;
   text-transform: uppercase;
   font-size: 21px;
@@ -409,6 +399,19 @@ h3 {
   color: var(--white);
   background-color: var(--grayish-orange);
 }
+
+.modal-find-hotel {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 568px;
+  background: var(--white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 
 .button-find-hotel button {
   font-weight: bold;
@@ -421,7 +424,7 @@ h3 {
   padding: 30px 125px 30px 124px;
 }
 
-input {
+.appointment-input {
   overflow: visible;
   background-color: var(--background);
   border: none;
@@ -432,11 +435,13 @@ input {
   font-weight: 700;
   line-height: 26px;
   text-align: left;
+  box-sizing: border-box;
 }
 
 .appointment-form {
   padding: 55px;
   display: block;
+
   }
 
 p.appointment-item-dates,
@@ -446,6 +451,25 @@ p.appointment-item-person-kids {
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+}
+
+.p.appointment-item-dates {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendar {
+  display: block;
+  border: none;
+  background: none;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  outline: 1px solid olive;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .find {
@@ -461,6 +485,16 @@ p.appointment-item-person-kids {
   margin: 0;
 }
 
+.map img {
+  display: block;
+}
+
+.footer-index {
+  margin-top: -126px;
+  background-color: var(--basic-white-90);
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+}
 
 .main-footer {
   background-color: var(--basic-white-90);
