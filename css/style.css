@@ -425,7 +425,7 @@ h3 {
 
 .find-hotel:hover,
 .find-hotel:focus {
-background-color: var(--brown);
+  background-color: var(--brown);
 }
 
 .find-hotel:active {
@@ -1160,9 +1160,9 @@ ul.last-line::after {
 }
 
 .range-controls .toggle:hover {
-    width: 4px;
-    height: 4px;
-    border: 9px solid #ffffff;
+  width: 4px;
+  height: 4px;
+  border: 9px solid #ffffff;
 }
 
 .range-controls .toggle-max {
@@ -1238,9 +1238,9 @@ ul.last-line::after {
 }
 
 .show:hover {
-color: var(--black);
-background-color: var(--white);
-border: 2px solid #ffffff;
+  color: var(--black);
+  background-color: var(--white);
+  border: 2px solid #ffffff;
 }
 
 .filter-form {
