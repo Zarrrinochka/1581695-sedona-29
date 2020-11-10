@@ -423,6 +423,16 @@ h3 {
   background-color: var(--grayish-orange);
 }
 
+.find-hotel:hover,
+.find-hotel:focus {
+background-color: var(--brown);
+}
+
+.find-hotel:active {
+  background-color: var(--dark-brown);
+  color: var(--white-30);
+}
+
 .button-find-hotel button {
   font-weight: bold;
   font-style: normal;
@@ -455,15 +465,15 @@ h3 {
   background-color: var(--background);
 }
 
-.appointment-input:hover {
+.input:hover {
   background-color: var(--grey-for-appointment-input);
 }
 
-.appointment-input:focus {
+.input:focus {
   background-color: var(--white);
   border: 2px solid #e5e5e5;
+  padding: 4px 11px;
 }
-
 
 .person-input {
   width: 38px;
@@ -480,6 +490,16 @@ h3 {
   width: 38px;
   height: 38px;
   position: relative;
+}
+
+.form-button:hover {
+  background-color: var(--grey-for-appointment-input);
+}
+
+.form-button:focus {
+  background-color: var(--white);
+  border: 2px solid #e5e5e5;
+  padding: 4px 11px;
 }
 
 .form-button:hover::before,
@@ -696,12 +716,16 @@ p.appointment-item-dates {
 }
 
 .social-list a:hover,
-.social-list a:focus {
+.social-list a:focus,
+.find:hover,
+.find:focus {
   background-color: var(--dark-cyan);
 }
 
-.social-list a:active {
+.social-list a:active,
+.find:active {
   background-color: var(--very-dark-cyan);
+  color: var(--white-30)
 }
 
 .fs-ub:active::before,
@@ -1097,12 +1121,12 @@ ul.last-line::after {
 }
 
 .filter-item-price legend {
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .range-controls {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 31px;
   margin-top: 20px;
   width: 316px;
   height: 2px;
@@ -1187,11 +1211,13 @@ ul.last-line::after {
 .min-price input {
   width: 10px;
   padding-top: 0;
+  line-height: 21px;
 }
 
 .max-price input {
   width: 35px;
   padding-top: 0;
+  line-height: 21px;
 }
 
 .show {
