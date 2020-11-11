@@ -199,10 +199,7 @@ sup {
  * Add the correct display in IE 9-.
  */
 
-audio,
-video {
-  display: inline-block;
-}
+
 
 /**
  * Add the correct display in iOS 4-7.
@@ -333,10 +330,6 @@ legend {
  * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
 
-progress {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
-}
 
 /**
  * Remove the default vertical scrollbar in IE.
@@ -423,9 +416,7 @@ summary {
  * Add the correct display in IE 9-.
  */
 
-canvas {
-  display: inline-block;
-}
+
 
 /**
  * Add the correct display in IE.
