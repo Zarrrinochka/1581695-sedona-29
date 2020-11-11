@@ -65,7 +65,7 @@
   list-style-type: none; /* Убираем маркеры для ul li*/
   margin: 0; /*убираем автоматику ul*/
   padding: 0 72px;
-
+  flex-wrap: wrap;
 }
 
 .nav-list li {
@@ -73,12 +73,12 @@
   padding: 15px 0;
 }
 
-.nav-list li:nth-child(3),
-.nav-list li:nth-child(4) {
+.nav-list li:nth-child(4n),
+.nav-list li:nth-child(4n + 3) {
   text-align: right;
 }
 
-.nav-list li:nth-child(3) {
+.nav-list li:nth-child(4n + 3) {
   margin-left: auto;
   margin-right: 0;
 }
