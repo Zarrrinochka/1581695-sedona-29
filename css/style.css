@@ -65,6 +65,7 @@
   list-style-type: none; /* Убираем маркеры для ul li*/
   margin: 0; /*убираем автоматику ul*/
   padding: 0 72px;
+
 }
 
 .nav-list li {
@@ -667,11 +668,13 @@ p.appointment-item-dates {
 .footer-social p {
   color: var(--black);
   text-transform: uppercase;
-  margin: 6px 3px 7px 60px;
+  margin-left: 60px;
+  margin-right: 3px;
   display: inline-block;
   transform: translateY(-50%);
   font-size: 14px;
   line-height: 26px;
+  vertical-align: middle;
 }
 
 .social-list {
